@@ -15,7 +15,14 @@ yarn add gatsby gatsby-theme-docz react react-dom
 ```js
 // gatsby-config.js
 module.exports = {
-  plugins: ['gatsby-theme-docz'],
+  plugins: [
+    {
+      resolve: `gatsby-theme-docz`,
+      options: {
+        /* your custom options */
+      },
+    },
+  ],
 }
 ```
 

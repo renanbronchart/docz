@@ -1,3 +1,15 @@
 module.exports = {
-  plugins: ['gatsby-plugin-stylus'],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-stylus`,
+      options: {
+       cssLoaderOptions: {
+         esModule: false,
+         modules: {
+           namedExport: false,
+         },
+       },
+     },
+    }
+  ],
 }

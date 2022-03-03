@@ -1,3 +1,15 @@
 module.exports = {
-  plugins: ['gatsby-plugin-sass'],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+       cssLoaderOptions: {
+         esModule: false,
+         modules: {
+           namedExport: false,
+         },
+       },
+     },
+    }
+  ],
 }

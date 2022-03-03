@@ -1,3 +1,15 @@
 module.exports = {
-  plugins: ['gatsby-plugin-less'],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-less`,
+      options: {
+        cssLoaderOptions: {
+          esModule: false,
+          modules: {
+            namedExport: false,
+          },
+        },
+      },
+    }
+  ],
 }
